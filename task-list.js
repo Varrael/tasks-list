@@ -64,6 +64,7 @@ class TaskList extends HTMLElement {
 
     const textInput = this.shadowRoot.getElementById('text');
     const addBtn = this.shadowRoot.getElementById('addTask');
+    const dateInput = this.shadowRoot.getElementById('date');
     const userSelect = this.shadowRoot.getElementById('user');
     const typeSelect = this.shadowRoot.getElementById('type');
 
@@ -71,6 +72,9 @@ class TaskList extends HTMLElement {
       addBtn.disabled = !textInput.value.trim();
       this.shadowRoot.getElementById('hint').style.display = 'none';
     });
+
+    dateInput.addEventListener('click', () => this.openDatePicker(dateInput));
+    dateInput.addEventListener('focus', () => this.openDatePicker(dateInput));
 
     userSelect.addEventListener('change', () => {
       this.handleAddOption('user', 'users', 'Имя ответственного');
@@ -87,6 +91,12 @@ class TaskList extends HTMLElement {
     this.shadowRoot.getElementById('themeToggle').onclick = () => this.toggleTheme();
 
     this.tasks.forEach(task => this.renderTask(task));
+  }
+
+  openDatePicker(dateInput) {
+    if (typeof dateInput.showPicker === 'function') {
+      dateInput.showPicker();
+    }
   }
 
   applyTheme(theme) {

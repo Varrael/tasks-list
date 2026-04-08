@@ -10,7 +10,7 @@ body {
   background: #edf2f7;
   color: #182230;
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -29,12 +29,12 @@ task-list {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 24px;
+  padding: 28px;
   box-sizing: border-box;
   background: #edf2f7;
   color: #182230;
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.4;
 }
 
@@ -85,9 +85,9 @@ task-list {
 .form {
   display: grid;
   grid-template-columns: repeat(4, minmax(120px, 1fr)) minmax(180px, 2fr) auto;
-  gap: 10px;
-  margin-bottom: 16px;
-  padding: 14px;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 16px;
   border: 1px solid #d9e2ef;
   border-radius: 8px;
   background: #ffffff;
@@ -97,14 +97,14 @@ task-list {
 input,
 select {
   min-width: 0;
-  padding: 9px 10px;
+  padding: 11px 12px;
   border: 1px solid #d4dce8;
   border-radius: 6px;
   box-sizing: border-box;
   background: #f8fafc;
   color: #182230;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   outline: none;
   transition: border-color 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
 }
@@ -145,10 +145,10 @@ button {
   border-radius: 6px;
   background: #2563eb;
   color: #ffffff;
-  padding: 8px 12px;
+  padding: 10px 14px;
   cursor: pointer;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   transition: background 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
 }
@@ -170,9 +170,9 @@ button:disabled {
 
 #addTask {
   align-self: stretch;
-  min-width: 92px;
-  padding: 0 8px;
-  font-size: 12px;
+  min-width: 104px;
+  padding: 0 10px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -216,11 +216,11 @@ button:disabled {
   position: sticky;
   top: 0;
   z-index: 1;
-  padding: 11px 12px;
+  padding: 13px 14px;
   border-bottom: 1px solid #d9e2ef;
   background: #f8fafc;
   color: #475569;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -230,10 +230,10 @@ button:disabled {
 
 .resizer {
   position: absolute;
-  top: -11px;
+  top: -13px;
   right: 0;
   width: 8px;
-  height: calc(100% + 22px);
+  height: calc(100% + 26px);
   cursor: col-resize;
 }
 
@@ -242,10 +242,10 @@ button:disabled {
 }
 
 .row {
-  padding: 11px 12px;
+  padding: 13px 14px;
   border-bottom: 1px solid #edf2f7;
   color: #263445;
-  font-size: 12px;
+  font-size: 13px;
   transition: background 0.14s ease, color 0.14s ease;
 }
 
