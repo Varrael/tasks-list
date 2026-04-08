@@ -7,7 +7,7 @@ class TaskList extends HTMLElement {
     this.theme = localStorage.getItem('taskListTheme') || 'light';
 
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles.css?v=20260408-1">
 
       <div class="topbar">
         <button id="themeToggle" class="theme-toggle" type="button"></button>
