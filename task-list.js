@@ -319,8 +319,12 @@ class TaskList extends HTMLElement {
 
   updateToolbar() {
     const toolbar = this.shadowRoot.getElementById('toolbar');
+    const bulkDone = this.shadowRoot.getElementById('bulkDone');
     const selected = this.getSelected();
+    const hasActiveTasks = selected.some(row => !row.classList.contains('done'));
+
     toolbar.style.display = selected.length ? 'flex' : 'none';
+    bulkDone.style.display = hasActiveTasks ? 'inline-block' : 'none';
     this.syncSelectAll(selected);
   }
 
